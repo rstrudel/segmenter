@@ -22,3 +22,6 @@ The code and several trained models will be released soon.
 
 
 ## Credits
+
+The Vision Transformer code is based on [timm](https://github.com/rwightman/pytorch-image-models) library and the semantic segmentation training and evaluation pipeline 
+is using [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
