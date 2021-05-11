@@ -1,6 +1,6 @@
 # Segmenter - Transformer for Semantic Segmentation
 
-![Figure 1 from paper](./overview.pdf)
+![Figure 1 from paper](./overview.png)
 
 [Segmenter: Transformer for Semantic Segmentation](https://arxiv.org/abs/)
 by Robin Strudel, Ricardo Garcia, Ivan Laptev and Cordelia Schmid. 
