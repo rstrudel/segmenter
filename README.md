@@ -13,9 +13,14 @@ The code and several trained models will be released soon.
 
 Segmentation maps of Seg-B-Mask/16 trained on [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) segmentation dataset and tested on [DAVIS](https://davischallenge.org/) videos dataset.
 
-<img src="https://github.com/rstrudel/segmenter/blob/master/gifs/breakdance-flare.gif" width="350">
-<img src="https://github.com/rstrudel/segmenter/blob/master/gifs/city-ride.gif" width="350">
-<img src="https://github.com/rstrudel/segmenter/blob/master/gifs/choreography.gif" width="350">
+<p float="middle">
+  <img src="https://github.com/rstrudel/segmenter/blob/master/gifs/breakdance-flare.gif" width="350">
+  <img src="https://github.com/rstrudel/segmenter/blob/master/gifs/city-ride.gif" width="350">
+</p>
+<p float="middle">
+  <img src="https://github.com/rstrudel/segmenter/blob/master/gifs/car-competition.gif" width="350">
+  <img src="https://github.com/rstrudel/segmenter/blob/master/gifs/choreography.gif" width="350">
+</p>
 
 ## BibTex
 
