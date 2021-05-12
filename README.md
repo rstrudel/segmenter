@@ -11,9 +11,11 @@ The code and several trained models will be released soon.
 
 ## Video Segmentation
 
-![Breakdance Flare](./gifs/breakdance-flare.gif =350x)
-![City Ride](./gifs/city-ride.gif =350px)
-![Choreography](./gifs/choreography.gif =350px)
+<img src="https://github.com/rstrudel/segmenter/blob/master/gifs/breakdance-flare.gif" width="350">
+
+<!-- ![Breakdance Flare](./gifs/breakdance-flare.gif =350x) -->
+<!-- ![City Ride](./gifs/city-ride.gif =350px) -->
+<!-- ![Choreography](./gifs/choreography.gif =350px) -->
 
 ## BibTex
 
