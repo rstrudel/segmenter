@@ -11,11 +11,11 @@ The code and several trained models will be released soon.
 
 ## Video Segmentation
 
-<img src="https://github.com/rstrudel/segmenter/blob/master/gifs/breakdance-flare.gif" width="350">
+Segmentation maps of Seg-B-Mask/16 trained on [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) segmentation dataset and tested on [DAVIS](https://davischallenge.org/) videos dataset.
 
-<!-- ![Breakdance Flare](./gifs/breakdance-flare.gif =350x) -->
-<!-- ![City Ride](./gifs/city-ride.gif =350px) -->
-<!-- ![Choreography](./gifs/choreography.gif =350px) -->
+<img src="https://github.com/rstrudel/segmenter/blob/master/gifs/breakdance-flare.gif" width="350">
+<img src="https://github.com/rstrudel/segmenter/blob/master/gifs/city-ride.gif" width="350">
+<img src="https://github.com/rstrudel/segmenter/blob/master/gifs/choreography.gif" width="350">
 
 ## BibTex
 
