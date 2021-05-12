@@ -11,7 +11,8 @@ The code and several trained models will be released soon.
 
 ## Video Segmentation
 
-![Basketball](./basketball.gif)
+![Breakdance Flare](./gifs/breakdance-flare.gif)
+![City Ride](./gifs/city-ride.gif)
 
 ## BibTex
 
