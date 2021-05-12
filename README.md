@@ -9,6 +9,10 @@ by Robin Strudel, Ricardo Garcia, Ivan Laptev and Cordelia Schmid.
 
 The code and several trained models will be released soon.
 
+## Video Segmentation
+
+![Basketball](./basketball.gif)
+
 ## BibTex
 
 ```
