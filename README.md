@@ -11,9 +11,9 @@ The code and several trained models will be released soon.
 
 ## Video Segmentation
 
-![Breakdance Flare](./gifs/breakdance-flare.gif){:height="70%" width="70%"}
-![City Ride](./gifs/city-ride.gif){:height="70%" width="70%"}
-![Choregraphy](./gifs/choregraphy.gif){:height="70%" width="70%"}
+![Breakdance Flare](./gifs/breakdance-flare.gif =350x)
+![City Ride](./gifs/city-ride.gif =350px)
+![Choreography](./gifs/choreography.gif =350px)
 
 ## BibTex
 
