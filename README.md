@@ -2,7 +2,7 @@
 
 ![Figure 1 from paper](./overview.png)
 
-[Segmenter: Transformer for Semantic Segmentation](https://arxiv.org/abs/)
+[Segmenter: Transformer for Semantic Segmentation](https://arxiv.org/abs/2105.05633)
 by Robin Strudel, Ricardo Garcia, Ivan Laptev and Cordelia Schmid. 
 
 ## Installation
@@ -28,7 +28,7 @@ Segmentation maps of Seg-B-Mask/16 trained on [ADE20K](https://groups.csail.mit.
 @article{strudel2021,
   title={Segmenter: Transformer for Semantic Segmentation},
   author={Strudel, Robin and Garcia, Ricardo and Laptev, Ivan and Schmid, Cordelia},
-  journal={arXiv preprint arXiv:?},
+  journal={arXiv preprint arXiv:2105.05633},
   year={2021}
 }
 ```
