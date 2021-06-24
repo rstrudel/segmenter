@@ -129,7 +129,7 @@ python -m segm.utils.logs logs.yml
 
 with `logs.yml` located in `utils/` with the path to your experiments logs:
 ```yaml
-root: /mnt/jean-zay/work/models/
+root: /path/to/checkpoints/
 logs:
   seg-t: seg_tiny_mask/log.txt
   seg-b: seg_base_mask/log.txt
