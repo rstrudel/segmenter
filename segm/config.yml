@@ -1,0 +1,124 @@
+model:
+  # deit
+  deit_tiny_distilled_patch16_224:
+    image_size: 224
+    patch_size: 16
+    d_model: 192
+    n_heads: 3
+    n_layers: 12
+    normalization: deit
+    distilled: true
+  deit_small_distilled_patch16_224:
+    image_size: 224
+    patch_size: 16
+    d_model: 384
+    n_heads: 6
+    n_layers: 12
+    normalization: deit
+    distilled: true
+  deit_base_distilled_patch16_224:
+    image_size: 224
+    patch_size: 16
+    d_model: 768
+    n_heads: 12
+    n_layers: 12
+    normalization: deit
+    distilled: true
+  deit_base_distilled_patch16_384:
+    image_size: 384
+    patch_size: 16
+    d_model: 768
+    n_heads: 12
+    n_layers: 12
+    normalization: deit
+    distilled: true
+  # vit
+  vit_base_patch8_384:
+    image_size: 384
+    patch_size: 8
+    d_model: 768
+    n_heads: 12
+    n_layers: 12
+    normalization: vit
+    distilled: false
+  vit_tiny_patch16_384:
+    image_size: 384
+    patch_size: 16
+    d_model: 192
+    n_heads: 3
+    n_layers: 12
+    normalization: vit
+    distilled: false
+  vit_small_patch16_384:
+    image_size: 384
+    patch_size: 16
+    d_model: 384
+    n_heads: 6
+    n_layers: 12
+    normalization: vit
+    distilled: false
+  vit_base_patch16_384:
+    image_size: 384
+    patch_size: 16
+    d_model: 768
+    n_heads: 12
+    n_layers: 12
+    normalization: vit
+    distilled: false
+  vit_base_patch32_384:
+    image_size: 384
+    patch_size: 32
+    d_model: 768
+    n_heads: 12
+    n_layers: 12
+    normalization: vit
+  vit_large_patch16_384:
+    image_size: 384
+    patch_size: 16
+    d_model: 1024
+    n_heads: 16
+    n_layers: 24
+    normalization: vit
+  vit_large_patch32_384:
+    image_size: 384
+    patch_size: 32
+    d_model: 1024
+    n_heads: 16
+    n_layers: 24
+    normalization: vit
+decoder:
+  linear: {}
+  deeplab_dec:
+    encoder_layer: -1
+  mask_transformer:
+    drop_path_rate: 0.0
+    dropout: 0.1
+    n_layers: 2
+dataset:
+  ade20k:
+    epochs: 64
+    eval_freq: 2
+    batch_size: 8
+    learning_rate: 0.001
+    im_size: 512
+    crop_size: 512
+    window_size: 512
+    window_stride: 512
+  pascal_context:
+    epochs: 256
+    eval_freq: 8
+    batch_size: 16
+    learning_rate: 0.001
+    im_size: 520
+    crop_size: 480
+    window_size: 480
+    window_stride: 320
+  cityscapes:
+    epochs: 216
+    eval_freq: 4
+    batch_size: 8
+    learning_rate: 0.01
+    im_size: 1024
+    crop_size: 768
+    window_size: 768
+    window_stride: 512

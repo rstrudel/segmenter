@@ -1,0 +1,8 @@
+torch
+click
+numpy
+einops
+python-hostlist
+tqdm
+requests
+# timm == 0.4.12

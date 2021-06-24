@@ -1,0 +1,360 @@
+- color:
+  - 120
+  - 120
+  - 120
+  id: 0
+  name: background
+- color:
+  - 180
+  - 120
+  - 120
+  id: 1
+  name: aeroplane
+- color:
+  - 6
+  - 230
+  - 230
+  id: 2
+  name: bicycle
+- color:
+  - 80
+  - 50
+  - 50
+  id: 3
+  name: bird
+- color:
+  - 4
+  - 200
+  - 3
+  id: 4
+  name: boat
+- color:
+  - 120
+  - 120
+  - 80
+  id: 5
+  name: bottle
+- color:
+  - 140
+  - 140
+  - 140
+  id: 6
+  name: bus
+- color:
+  - 204
+  - 5
+  - 255
+  id: 7
+  name: car
+- color:
+  - 230
+  - 230
+  - 230
+  id: 8
+  name: cat
+- color:
+  - 4
+  - 250
+  - 7
+  id: 9
+  name: chair
+- color:
+  - 224
+  - 5
+  - 255
+  id: 10
+  name: cow
+- color:
+  - 235
+  - 255
+  - 7
+  id: 11
+  name: table
+- color:
+  - 150
+  - 5
+  - 61
+  id: 12
+  name: dog
+- color:
+  - 120
+  - 120
+  - 70
+  id: 13
+  name: horse
+- color:
+  - 8
+  - 255
+  - 51
+  id: 14
+  name: motorbike
+- color:
+  - 255
+  - 6
+  - 82
+  id: 15
+  name: person
+- color:
+  - 143
+  - 255
+  - 140
+  id: 16
+  name: pottedplant
+- color:
+  - 204
+  - 255
+  - 4
+  id: 17
+  name: sheep
+- color:
+  - 255
+  - 51
+  - 7
+  id: 18
+  name: sofa
+- color:
+  - 204
+  - 70
+  - 3
+  id: 19
+  name: train
+- color:
+  - 0
+  - 102
+  - 200
+  id: 20
+  name: tvmonitor
+- color:
+  - 61
+  - 230
+  - 250
+  id: 21
+  name: bag
+- color:
+  - 255
+  - 6
+  - 51
+  id: 22
+  name: bed
+- color:
+  - 11
+  - 102
+  - 255
+  id: 23
+  name: bench
+- color:
+  - 255
+  - 7
+  - 71
+  id: 24
+  name: book
+- color:
+  - 255
+  - 9
+  - 224
+  id: 25
+  name: building
+- color:
+  - 9
+  - 7
+  - 230
+  id: 26
+  name: cabinet
+- color:
+  - 220
+  - 220
+  - 220
+  id: 27
+  name: ceiling
+- color:
+  - 255
+  - 9
+  - 92
+  id: 28
+  name: cloth
+- color:
+  - 112
+  - 9
+  - 255
+  id: 29
+  name: computer
+- color:
+  - 8
+  - 255
+  - 214
+  id: 30
+  name: cup
+- color:
+  - 7
+  - 255
+  - 224
+  id: 31
+  name: door
+- color:
+  - 255
+  - 184
+  - 6
+  id: 32
+  name: fence
+- color:
+  - 10
+  - 255
+  - 71
+  id: 33
+  name: floor
+- color:
+  - 255
+  - 41
+  - 10
+  id: 34
+  name: flower
+- color:
+  - 7
+  - 255
+  - 255
+  id: 35
+  name: food
+- color:
+  - 224
+  - 255
+  - 8
+  id: 36
+  name: grass
+- color:
+  - 102
+  - 8
+  - 255
+  id: 37
+  name: ground
+- color:
+  - 255
+  - 61
+  - 6
+  id: 38
+  name: keyboard
+- color:
+  - 255
+  - 194
+  - 7
+  id: 39
+  name: light
+- color:
+  - 255
+  - 122
+  - 8
+  id: 40
+  name: mountain
+- color:
+  - 0
+  - 255
+  - 20
+  id: 41
+  name: mouse
+- color:
+  - 255
+  - 8
+  - 41
+  id: 42
+  name: curtain
+- color:
+  - 255
+  - 5
+  - 153
+  id: 43
+  name: platform
+- color:
+  - 6
+  - 51
+  - 255
+  id: 44
+  name: sign
+- color:
+  - 235
+  - 12
+  - 255
+  id: 45
+  name: plate
+- color:
+  - 160
+  - 150
+  - 20
+  id: 46
+  name: road
+- color:
+  - 0
+  - 163
+  - 255
+  id: 47
+  name: rock
+- color:
+  - 140
+  - 140
+  - 140
+  id: 48
+  name: shelves
+- color:
+  - 250
+  - 10
+  - 15
+  id: 49
+  name: sidewalk
+- color:
+  - 20
+  - 255
+  - 0
+  id: 50
+  name: sky
+- color:
+  - 31
+  - 255
+  - 0
+  id: 51
+  name: snow
+- color:
+  - 255
+  - 31
+  - 0
+  id: 52
+  name: bedclothes
+- color:
+  - 255
+  - 224
+  - 0
+  id: 53
+  name: track
+- color:
+  - 153
+  - 255
+  - 0
+  id: 54
+  name: tree
+- color:
+  - 0
+  - 0
+  - 255
+  id: 55
+  name: truck
+- color:
+  - 255
+  - 71
+  - 0
+  id: 56
+  name: wall
+- color:
+  - 0
+  - 235
+  - 255
+  id: 57
+  name: water
+- color:
+  - 0
+  - 173
+  - 255
+  id: 58
+  name: window
+- color:
+  - 31
+  - 0
+  - 255
+  id: 59
+  name: wood
