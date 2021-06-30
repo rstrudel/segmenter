@@ -74,7 +74,7 @@ Segmenter models trained on ADE20K:
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask/log.txt">log</a></td>
   </tr>
 <tr>
-    <td>Seg-L-Mask/16 (640)</td>
+    <td>Seg-L-Mask/16</td>
     <td>51.8 / 53.6</td>
     <td>334M</td>
     <td>640x640</td>
