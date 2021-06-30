@@ -91,6 +91,7 @@ Segmenter models trained on ADE20K with DeiT-Base backbone:
     <th>Name</th>
     <th>mIoU (SS/MS)</th>
     <th># params</th>
+    <th>Resolution</th>
     <th>FPS</th>
     <th colspan="3">Download</th>
   </tr>
@@ -98,6 +99,7 @@ Segmenter models trained on ADE20K with DeiT-Base backbone:
     <td>Seg-B<span>&#8224;</span>/16</td>
     <td>47.1 / 48.1</td>
     <td>87M</td>
+    <td>512x512</td>
     <td>27.3</td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_linear/checkpoint.pth">model</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/deit_base_deit_linear/variant.yml">config</a></td>
@@ -107,6 +109,7 @@ Segmenter models trained on ADE20K with DeiT-Base backbone:
     <td>Seg-B<span>&#8224;</span>-Mask/16</td>
     <td>48.7 / 50.1</td>
     <td>106M</td>
+    <td>512x512</td>
     <td>24.1</td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_mask/checkpoint.pth">model</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_mask/variant.yml">config</a></td>
