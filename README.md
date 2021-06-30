@@ -29,6 +29,7 @@ Segmenter models trained on ADE20K:
     <th>Name</th>
     <th>mIoU (SS/MS)</th>
     <th># params</th>
+    <th>Resolution</th>
     <th>FPS</th>
     <th colspan="3">Download</th>
   </tr>
@@ -36,6 +37,7 @@ Segmenter models trained on ADE20K:
     <td>Seg-T-Mask/16</td>
     <td>38.1 / 38.8</td>
     <td>7M</td>
+    <td>512x512</td>
     <td>52.4</td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_tiny_mask/checkpoint.pth">model</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_tiny_mask/variant.yml">config</a></td>
@@ -45,6 +47,7 @@ Segmenter models trained on ADE20K:
     <td>Seg-S-Mask/16</td>
     <td>45.3 / 46.9</td>
     <td>27M</td>
+    <td>512x512</td>
     <td>34.8</td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_small_mask/checkpoint.pth">model</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_small_mask/variant.yml">config</a></td>
@@ -54,6 +57,7 @@ Segmenter models trained on ADE20K:
     <td>Seg-B-Mask/16</td>
     <td>48.5 / 50.0</td>
     <td>106M</td>
+    <td>512x512</td>
     <td>24.1</td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_mask/checkpoint.pth">model</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_mask/variant.yml">config</a></td>
@@ -63,10 +67,21 @@ Segmenter models trained on ADE20K:
     <td>Seg-L-Mask/16</td>
     <td>51.3 / 53.2</td>
     <td>334M</td>
+    <td>512x512</td>
     <td>10.6</td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask/checkpoint.pth">model</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask/variant.yml">config</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask/log.txt">log</a></td>
+  </tr>
+<tr>
+    <td>Seg-L-Mask/16 (640)</td>
+    <td>51.8 / 53.6</td>
+    <td>334M</td>
+    <td>640x640</td>
+    <td>-</td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask_640/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask_640/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask_640/log.txt">log</a></td>
   </tr>
 </table>
 
