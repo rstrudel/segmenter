@@ -5,4 +5,4 @@ einops
 python-hostlist
 tqdm
 requests
-# timm == 0.4.12
+timm == 0.4.12
