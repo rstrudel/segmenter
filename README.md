@@ -13,7 +13,7 @@ Define os environment variables pointing to your checkpoint and dataset director
 export DATASET=/path/to/dataset/dir
 ```
 
-Install [PyTorch 1.9](https://pytorch.org/) and `mmsegmentation 0.14.1` by following the [guidelines](https://github.com/open-mmlab/mmsegmentation/blob/v0.14.1/docs/get_started.md#installation). Then `pip install timm==0.4.12`, this version is not available yet so you can set it up by cloning the [git repository](https://github.com/rwightman/pytorch-image-models) then pip install it. Finally, `pip install .` at the root of this repository.
+Install [PyTorch 1.9](https://pytorch.org/) and `mmsegmentation 0.14.1` by following the [guidelines](https://github.com/open-mmlab/mmsegmentation/blob/v0.14.1/docs/get_started.md#installation). Then `pip install timm==0.4.12` and finally `pip install .` at the root of this repository.
 
 To download ADE20K, use the following command:
 ```python
