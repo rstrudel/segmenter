@@ -1,4 +1,5 @@
 import click
+from tqdm import tqdm
 from pathlib import Path
 from PIL import Image
 import numpy as np
@@ -33,7 +34,8 @@ def main(model_path, input_dir, output_dir, gpu):
     output_dir = Path(output_dir)
     output_dir.mkdir(exist_ok=True)
 
-    for filename in input_dir.iterdir():
+    list_dir = list(input_dir.iterdir())
+    for filename in tqdm(list_dir, ncols=80):
         pil_im = Image.open(filename).copy()
         im = F.pil_to_tensor(pil_im).float() / 255
         im = F.normalize(im, normalization["mean"], normalization["std"])
@@ -49,8 +51,8 @@ def main(model_path, input_dir, output_dir, gpu):
             window_stride=variant["inference_kwargs"]["window_stride"],
             batch_size=2,
         )
-        seg_map = logits.argmax(0)
-        seg_rgb = seg_to_rgb(seg_map.unsqueeze(0), cat_colors)
+        seg_map = logits.argmax(0, keepdim=True)
+        seg_rgb = seg_to_rgb(seg_map, cat_colors)
         seg_rgb = (255 * seg_rgb.cpu().numpy()).astype(np.uint8)
         pil_seg = Image.fromarray(seg_rgb[0])
 
