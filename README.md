@@ -124,7 +124,7 @@ Download one checkpoint with its configuration in a common folder, for example `
 
 You can generate segmentation maps from your own data with:
 ```python
-python -m segm.inference --model-path seg_tiny_mask/checkpoint.pth -i ~/images/ -o ~/segmaps/ 
+python -m segm.inference --model-path seg_tiny_mask/checkpoint.pth -i images/ -o segmaps/ 
 ```
 
 To evaluate on ADE20K, run the command:
