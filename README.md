@@ -118,9 +118,16 @@ Segmenter models trained on ADE20K with DeiT-Base backbone:
   </tr>
 </table>
 
-## Evaluation
+## Inference
 
-Download one checkpoint with its configuration in a common folder, for example `seg_tiny_mask`, then evaluate with:
+Download one checkpoint with its configuration in a common folder, for example `seg_tiny_mask`.
+
+You can generate segmentation maps from your own data with:
+```python
+python -m segm.inference --model-path seg_tiny_mask/checkpoint.pth -i ~/images/ -o ~/segmaps/ 
+```
+
+To evaluate on ADE20K, run the command:
 ```python
 # single-scale evaluation:
 python -m segm.eval.miou seg_tiny_mask/checkpoint.pth ade20k --singlescale
