@@ -162,7 +162,7 @@ logs:
 
 ## Video Segmentation
 
-Segmentation maps of Seg-B-Mask/16 trained on [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/) segmentation dataset and tested on [DAVIS](https://davischallenge.org/) video dataset.
+Zero shot video segmentation on [DAVIS](https://davischallenge.org/) video dataset with Seg-B-Mask/16 model trained on [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/).
 
 <p align="middle">
   <img src="https://github.com/rstrudel/segmenter/blob/master/gifs/choreography.gif" width="350">
