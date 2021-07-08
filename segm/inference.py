@@ -25,9 +25,10 @@ def main(model_path, input_dir, output_dir, gpu):
 
     model_dir = Path(model_path).parent
     model, variant = load_model(model_path)
+    model.to(ptu.device)
+
     normalization_name = variant["dataset_kwargs"]["normalization"]
     normalization = STATS[normalization_name]
-
     cat_names, cat_colors = dataset_cat_description(ADE20K_CATS_PATH)
 
     input_dir = Path(input_dir)
