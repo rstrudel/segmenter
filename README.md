@@ -102,7 +102,7 @@ Segmenter models trained on ADE20K with DeiT-Base backbone:
     <td>512x512</td>
     <td>27.3</td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_linear/checkpoint.pth">model</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/deit_base_deit_linear/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_linear/variant.yml">config</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_linear/log.txt">log</a></td>
   </tr>
 <tr>
