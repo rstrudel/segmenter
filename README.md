@@ -39,9 +39,9 @@ Segmenter models trained on ADE20K:
     <td>7M</td>
     <td>512x512</td>
     <td>52.4</td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_tiny_mask/checkpoint.pth">model</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_tiny_mask/variant.yml">config</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_tiny_mask/log.txt">log</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_tiny_mask/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_tiny_mask/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_tiny_mask/log.txt">log</a></td>
   </tr>
 <tr>
     <td>Seg-S-Mask/16</td>
@@ -49,9 +49,9 @@ Segmenter models trained on ADE20K:
     <td>27M</td>
     <td>512x512</td>
     <td>34.8</td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_small_mask/checkpoint.pth">model</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_small_mask/variant.yml">config</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_small_mask/log.txt">log</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_small_mask/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_small_mask/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_small_mask/log.txt">log</a></td>
   </tr>
 <tr>
     <td>Seg-B-Mask/16</td>
@@ -59,9 +59,9 @@ Segmenter models trained on ADE20K:
     <td>106M</td>
     <td>512x512</td>
     <td>24.1</td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_mask/checkpoint.pth">model</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_mask/variant.yml">config</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_mask/log.txt">log</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_mask/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_mask/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_mask/log.txt">log</a></td>
   </tr>
 <tr>
     <td>Seg-L-Mask/16</td>
@@ -69,9 +69,9 @@ Segmenter models trained on ADE20K:
     <td>334M</td>
     <td>512x512</td>
     <td>10.6</td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask/checkpoint.pth">model</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask/variant.yml">config</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask/log.txt">log</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask/log.txt">log</a></td>
   </tr>
 <tr>
     <td>Seg-L-Mask/16</td>
@@ -79,9 +79,9 @@ Segmenter models trained on ADE20K:
     <td>334M</td>
     <td>640x640</td>
     <td>-</td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask_640/checkpoint.pth">model</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask_640/variant.yml">config</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_large_mask_640/log.txt">log</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask_640/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask_640/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask_640/log.txt">log</a></td>
   </tr>
 </table>
 
@@ -101,9 +101,9 @@ Segmenter models trained on ADE20K with DeiT-Base backbone:
     <td>87M</td>
     <td>512x512</td>
     <td>27.3</td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_linear/checkpoint.pth">model</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_linear/variant.yml">config</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_linear/log.txt">log</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_deit_linear/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_deit_linear/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_deit_linear/log.txt">log</a></td>
   </tr>
 <tr>
     <td>Seg-B<span>&#8224;</span>-Mask/16</td>
@@ -111,9 +111,9 @@ Segmenter models trained on ADE20K with DeiT-Base backbone:
     <td>106M</td>
     <td>512x512</td>
     <td>24.1</td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_mask/checkpoint.pth">model</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_mask/variant.yml">config</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/seg_base_deit_mask/log.txt">log</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_deit_mask/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_deit_mask/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_deit_mask/log.txt">log</a></td>
 
   </tr>
 </table>
