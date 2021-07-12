@@ -65,19 +65,27 @@ model:
     n_layers: 12
     normalization: vit
     distilled: false
-  vit_base_patch32_384:
-    image_size: 384
-    patch_size: 32
-    d_model: 768
-    n_heads: 12
-    n_layers: 12
-    normalization: vit
   vit_large_patch16_384:
     image_size: 384
     patch_size: 16
     d_model: 1024
     n_heads: 16
     n_layers: 24
+    normalization: vit
+  vit_small_patch32_384:
+    image_size: 384
+    patch_size: 32
+    d_model: 384
+    n_heads: 6
+    n_layers: 12
+    normalization: vit
+    distilled: false
+  vit_base_patch32_384:
+    image_size: 384
+    patch_size: 32
+    d_model: 768
+    n_heads: 12
+    n_layers: 12
     normalization: vit
   vit_large_patch32_384:
     image_size: 384
