@@ -23,7 +23,9 @@ python -m segm.scripts.prepare_ade20k $DATASET
 ## Model Zoo
 We release models with a Vision Transformer backbone initialized from the [improved ViT](https://arxiv.org/abs/2106.10270) models.
 
-Segmenter models trained on ADE20K:
+### ADE20K
+
+Segmenter models with ViT backbone:
 <table>
   <tr>
     <th>Name</th>
@@ -85,7 +87,7 @@ Segmenter models trained on ADE20K:
   </tr>
 </table>
 
-Segmenter models trained on ADE20K with DeiT-Base backbone:
+Segmenter models with DeiT backbone:
 <table>
   <tr>
     <th>Name</th>
@@ -115,6 +117,28 @@ Segmenter models trained on ADE20K with DeiT-Base backbone:
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_deit_mask/variant.yml">config</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_deit_mask/log.txt">log</a></td>
 
+  </tr>
+</table>
+
+### Pascal Context
+<table>
+  <tr>
+    <th>Name</th>
+    <th>mIoU (SS/MS)</th>
+    <th># params</th>
+    <th>Resolution</th>
+    <th>FPS</th>
+    <th colspan="3">Download</th>
+  </tr>
+<tr>
+    <td>Seg-L-Mask/16</td>
+    <td>58.1 / 59.0</td>
+    <td>334M</td>
+    <td>480x480</td>
+    <td>-</td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/pascal_context/seg_large_mask/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/pascal_context/seg_large_mask/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/pascal_context/seg_large_mask/log.txt">log</a></td>
   </tr>
 </table>
 
