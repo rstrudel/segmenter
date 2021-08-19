@@ -25,7 +25,7 @@ We release models with a Vision Transformer backbone initialized from the [impro
 
 ### ADE20K
 
-Segmenter models with ViT/16 backbone:
+Segmenter models with ViT backbone:
 <table>
   <tr>
     <th>Name</th>
@@ -66,28 +66,6 @@ Segmenter models with ViT/16 backbone:
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_mask/log.txt">log</a></td>
   </tr>
 <tr>
-    <td>Seg-L-Mask/16</td>
-    <td>51.8 / 53.6</td>
-    <td>334M</td>
-    <td>640x640</td>
-    <td>-</td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask_640/checkpoint.pth">model</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask_640/variant.yml">config</a></td>
-    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask_640/log.txt">log</a></td>
-  </tr>
-</table>
-
-Segmenter models with ViT-B/8 backbone:
-<table>
-  <tr>
-    <th>Name</th>
-    <th>mIoU (SS/MS)</th>
-    <th># params</th>
-    <th>Resolution</th>
-    <th>FPS</th>
-    <th colspan="3">Download</th>
-  </tr>
-<tr>
     <td>Seg-B/8</td>
     <td>49.5 / 50.5</td>
     <td>>89M</td>
@@ -96,6 +74,16 @@ Segmenter models with ViT-B/8 backbone:
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_patch8/checkpoint.pth">model</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_patch8/variant.yml">config</a></td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_patch8/log.txt">log</a></td>
+  </tr>
+<tr>
+    <td>Seg-L-Mask/16</td>
+    <td>51.8 / 53.6</td>
+    <td>334M</td>
+    <td>640x640</td>
+    <td>-</td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask_640/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask_640/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_large_mask_640/log.txt">log</a></td>
   </tr>
 </table>
 
