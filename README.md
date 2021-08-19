@@ -68,7 +68,7 @@ Segmenter models with ViT backbone:
 <tr>
     <td>Seg-B/8</td>
     <td>49.5 / 50.5</td>
-    <td>>89M</td>
+    <td>89M</td>
     <td>512x512</td>
     <td>4.2</td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/ade20k/seg_base_patch8/checkpoint.pth">model</a></td>
