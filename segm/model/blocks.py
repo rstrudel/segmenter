@@ -74,7 +74,7 @@ class Attention(nn.Module):
         x = self.proj(x)
         x = self.proj_drop(x)
 
-        return x
+        return x, attn
 
 
 class Block(nn.Module):
@@ -86,7 +86,10 @@ class Block(nn.Module):
         self.mlp = FeedForward(dim, mlp_dim, dropout)
         self.drop_path = DropPath(drop_path) if drop_path > 0.0 else nn.Identity()
 
-    def forward(self, x, mask=None):
-        x = x + self.drop_path(self.attn(self.norm1(x), mask))
+    def forward(self, x, mask=None, return_attention=False):
+        y, attn = self.attn(self.norm1(x), mask)
+        if return_attention:
+            return attn
+        x = x + self.drop_path(y)
         x = x + self.drop_path(self.mlp(self.norm2(x)))
         return x

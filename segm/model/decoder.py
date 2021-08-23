@@ -50,6 +50,7 @@ class MaskTransformer(nn.Module):
         super().__init__()
         self.d_encoder = d_encoder
         self.patch_size = patch_size
+        self.n_layers = n_layers
         self.n_cls = n_cls
         self.d_model = d_model
         self.d_ff = d_ff
@@ -99,3 +100,17 @@ class MaskTransformer(nn.Module):
         masks = rearrange(masks, "b (h w) n -> b n h w", h=int(GS))
 
         return masks
+
+    def get_attention_map(self, x, layer_id):
+        if layer_id >= self.n_layers or layer_id < 0:
+            raise ValueError(
+                f"Provided layer_id: {layer_id} is not valid. 0 <= {layer_id} < {self.n_layers}."
+            )
+        x = self.proj_dec(x)
+        cls_emb = self.cls_emb.expand(x.size(0), -1, -1)
+        x = torch.cat((x, cls_emb), 1)
+        for i, blk in enumerate(self.blocks):
+            if i < layer_id:
+                x = blk(x)
+            else:
+                return blk(x, return_attention=True)

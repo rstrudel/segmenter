@@ -46,3 +46,15 @@ class Segmenter(nn.Module):
         masks = unpadding(masks, (H_ori, W_ori))
 
         return masks
+
+    def get_attention_map_enc(self, im, layer_id):
+        return self.encoder.get_attention_map(im, layer_id)
+
+    def get_attention_map_dec(self, im, layer_id):
+        x = self.encoder(im, return_features=True)
+
+        # remove CLS/DIST tokens for decoding
+        num_extra_tokens = 1 + self.encoder.distilled
+        x = x[:, num_extra_tokens:]
+
+        return self.decoder.get_attention_map(x, layer_id)

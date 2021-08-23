@@ -145,3 +145,36 @@ class VisionTransformer(nn.Module):
             x = x[:, 0]
             x = self.head(x)
         return x
+
+    def get_attention_map(self, im, layer_id):
+        if layer_id >= self.n_layers or layer_id < 0:
+            raise ValueError(
+                f"Provided layer_id: {layer_id} is not valid. 0 <= {layer_id} < {self.n_layers}."
+            )
+        B, _, H, W = im.shape
+        PS = self.patch_size
+
+        x = self.patch_embed(im)
+        cls_tokens = self.cls_token.expand(B, -1, -1)
+        if self.distilled:
+            dist_tokens = self.dist_token.expand(B, -1, -1)
+            x = torch.cat((cls_tokens, dist_tokens, x), dim=1)
+        else:
+            x = torch.cat((cls_tokens, x), dim=1)
+
+        pos_embed = self.pos_embed
+        num_extra_tokens = 1 + self.distilled
+        if x.shape[1] != pos_embed.shape[1]:
+            pos_embed = resize_pos_embed(
+                pos_embed,
+                self.patch_embed.grid_size,
+                (H // PS, W // PS),
+                num_extra_tokens,
+            )
+        x = x + pos_embed
+
+        for i, blk in enumerate(self.blocks):
+            if i < layer_id:
+                x = blk(x)
+            else:
+                return blk(x, return_attention=True)
