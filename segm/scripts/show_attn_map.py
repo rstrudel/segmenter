@@ -136,7 +136,6 @@ def visualize(
         else:
             attentions = attentions[0, :, num_patch, :-n_cls]
 
-    print(f"Attentions shape {attentions.shape}")
     # Reshape into image shape
     nh = attentions.shape[0]  # Number of heads
     attentions = attentions.reshape(nh, -1)

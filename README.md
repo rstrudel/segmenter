@@ -184,6 +184,34 @@ logs:
   seg-b: seg_base_mask/log.txt
 ```
 
+## Attention Maps
+
+To visualize the attention maps for `Seg-T-Mask/16` encoder layer 0 and patch `(0, 21)`, you can use:
+
+``` python
+python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth images/im0.jpg output_dir/ --layer_id 0 --x_patch 0 --y_patch 21 --enc
+```
+
+Different options are provided to select the generated attention maps:
+* `--enc\--dec`: Select encoder or decoder attention maps respectively.
+* `--patch\--cls`: Patch mode (`--patch`) generates attention maps for the patch provided with flags `--x_patch` and `--y_patch` while CLS mode (`--cls`) generate attention maps for the CLS token in the encoder if `--enc` flag is provided and for each class embedding in the decoder if `--dec` is used.
+* `--x_patch` and `--y_patch`: Select the patch for which attention maps are generated. This flag is ignored when `--cls` flag is used.
+* `--layer_id`: Select the layer for which the attention maps are generated.
+
+For example, to generate attention maps for the decoder class embeddings, you can use:
+
+``` python
+python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth images/im0.jpg output_dir/ --layer_id 0 --dec --cls
+```
+
+Attention maps for patch `(0, 21)` in `Seg-L-Mask/16` encoder layers 1, 4, 8, 12 and 16: 
+
+![Attention maps of patch x=8 and y=21 and encoder layers 1, 4, 8, 12 and 16](./attn_maps_enc.png)
+
+Attention maps for the class embeddings in `Seg-L-Mask/16` decoder layer 0: 
+
+![Attention maps of cls tokens 7, 15, 18, 22, 36 and 57 and Mask decoder layer 0](./attn_maps_dec.png)
+
 ## Video Segmentation
 
 Zero shot video segmentation on [DAVIS](https://davischallenge.org/) video dataset with Seg-B-Mask/16 model trained on [ADE20K](https://groups.csail.mit.edu/vision/datasets/ADE20K/).
