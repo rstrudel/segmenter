@@ -189,19 +189,19 @@ logs:
 To visualize the attention maps for `Seg-T-Mask/16` encoder layer 0 and patch `(0, 21)`, you can use:
 
 ``` python
-python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth images/im0.jpg output_dir/ --layer_id 0 --x_patch 0 --y_patch 21 --enc
+python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth images/im0.jpg output_dir/ --layer-id 0 --x-patch 0 --y-patch 21 --enc
 ```
 
 Different options are provided to select the generated attention maps:
 * `--enc\--dec`: Select encoder or decoder attention maps respectively.
-* `--patch\--cls`: Patch mode (`--patch`) generates attention maps for the patch provided with flags `--x_patch` and `--y_patch` while CLS mode (`--cls`) generate attention maps for the CLS token in the encoder if `--enc` flag is provided and for each class embedding in the decoder if `--dec` is used.
-* `--x_patch` and `--y_patch`: Select the patch for which attention maps are generated. This flag is ignored when `--cls` flag is used.
-* `--layer_id`: Select the layer for which the attention maps are generated.
+* `--patch\--cls`: Patch mode (`--patch`) generates attention maps for the patch provided with flags `--x-patch` and `--y-patch` while CLS mode (`--cls`) generate attention maps for the CLS token in the encoder if `--enc` flag is provided and for each class embedding in the decoder if `--dec` is used.
+* `--x-patch` and `--y-patch`: Select the patch for which attention maps are generated. This flag is ignored when `--cls` flag is used.
+* `--layer-id`: Select the layer for which the attention maps are generated.
 
 For example, to generate attention maps for the decoder class embeddings, you can use:
 
 ``` python
-python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth images/im0.jpg output_dir/ --layer_id 0 --dec --cls
+python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth images/im0.jpg output_dir/ --layer-id 0 --dec --cls
 ```
 
 Attention maps for patch `(0, 21)` in `Seg-L-Mask/16` encoder layers 1, 4, 8, 12 and 16: 

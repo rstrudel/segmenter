@@ -17,12 +17,12 @@ from torchvision import transforms
 
 
 @click.command()
-@click.argument("model_path", type=str)
-@click.argument("image_path", type=str)
-@click.argument("output_dir", type=str)
-@click.option("--layer_id", default=0, type=int)
-@click.option("--x_patch", default=0, type=int)
-@click.option("--y_patch", default=0, type=int)
+@click.argument("model-path", type=str)
+@click.argument("image-path", type=str)
+@click.argument("output-dir", type=str)
+@click.option("--layer-id", default=0, type=int)
+@click.option("--x-patch", default=0, type=int)
+@click.option("--y-patch", default=0, type=int)
 @click.option("--cmap", default="viridis", type=str)
 @click.option("--enc/--dec", default=True, is_flag=True)
 @click.option("--cls/--patch", default=False, is_flag=True)
