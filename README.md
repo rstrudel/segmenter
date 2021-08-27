@@ -188,8 +188,9 @@ logs:
 
 To visualize the attention maps for `Seg-T-Mask/16` encoder layer 0 and patch `(0, 21)`, you can use:
 
-``` python
-python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth images/im0.jpg output_dir/ --layer-id 0 --x-patch 0 --y-patch 21 --enc
+```python
+python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth \ 
+images/im0.jpg output_dir/ --layer-id 0 --x-patch 0 --y-patch 21 --enc
 ```
 
 Different options are provided to select the generated attention maps:
@@ -200,8 +201,9 @@ Different options are provided to select the generated attention maps:
 
 For example, to generate attention maps for the decoder class embeddings, you can use:
 
-``` python
-python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth images/im0.jpg output_dir/ --layer-id 0 --dec --cls
+```python
+python -m segm.scripts.show_attn_map seg_tiny_mask/checkpoint.pth \
+images/im0.jpg output_dir/ --layer-id 0 --dec --cls
 ```
 
 Attention maps for patch `(0, 21)` in `Seg-L-Mask/16` encoder layers 1, 4, 8, 12 and 16: 
