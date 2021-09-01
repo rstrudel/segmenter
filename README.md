@@ -194,9 +194,9 @@ images/im0.jpg output_dir/ --layer-id 0 --x-patch 0 --y-patch 21 --enc
 ```
 
 Different options are provided to select the generated attention maps:
-* `--enc\--dec`: Select encoder or decoder attention maps respectively.
-* `--patch\--cls`: Patch mode (`--patch`) generates attention maps for the patch provided with flags `--x-patch` and `--y-patch` while CLS mode (`--cls`) generate attention maps for the CLS token in the encoder if `--enc` flag is provided and for each class embedding in the decoder if `--dec` is used.
-* `--x-patch` and `--y-patch`: Select the patch for which attention maps are generated. This flag is ignored when `--cls` flag is used.
+* `--enc` or `--dec`: Select encoder or decoder attention maps respectively.
+* `--patch` or `--cls`: `--patch` generates attention maps for the patch with coordinates `(x_patch, y_patch)`. `--cls` combined with `--enc` generates attention maps for the CLS token of the encoder. `--cls` combined with `--dec` generates maps for each class embedding of the decoder.
+* `--x-patch` and `--y-patch`: Coordinate of the patch to draw attention maps from. This flag is ignored when `--cls` is used.
 * `--layer-id`: Select the layer for which the attention maps are generated.
 
 For example, to generate attention maps for the decoder class embeddings, you can use:
