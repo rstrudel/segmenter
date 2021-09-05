@@ -183,10 +183,12 @@ def visualize(
         # Compute corresponding X and Y px in the original image
         x_px = x_patch * patch_size
         y_px = y_patch * patch_size
-        px_v = einops.rearrange(
-            torch.tensor([1, 0, 0]).repeat([patch_size, patch_size, 1]),
-            "h w c -> c h w",
-        ).unsqueeze(0)
+        px_v = einops.repeat(
+            torch.tensor([1, 0, 0]),
+            "c -> 1 c h w",
+            h=patch_size,
+            w=patch_size,
+        )
 
         # Draw pixels for selected patch
         im_n[:, y_px : y_px + patch_size, x_px : x_px + patch_size] = px_v
