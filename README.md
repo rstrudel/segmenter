@@ -142,6 +142,28 @@ Segmenter models with DeiT backbone:
   </tr>
 </table>
 
+### Cityscapes
+<table>
+  <tr>
+    <th>Name</th>
+    <th>mIoU (SS/MS)</th>
+    <th># params</th>
+    <th>Resolution</th>
+    <th>FPS</th>
+    <th colspan="3">Download</th>
+  </tr>
+<tr>
+    <td>Seg-L-Mask/16</td>
+    <td>79.1 / 81.3</td>
+    <td>334M</td>
+    <td>768x768</td>
+    <td>-</td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/cityscapes/seg_large_mask/checkpoint.pth">model</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/cityscapes/seg_large_mask/variant.yml">config</a></td>
+    <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/cityscapes/seg_large_mask/log.txt">log</a></td>
+  </tr>
+</table>
+
 ## Inference
 
 Download one checkpoint with its configuration in a common folder, for example `seg_tiny_mask`.
