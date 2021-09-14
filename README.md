@@ -155,7 +155,7 @@ Segmenter models with DeiT backbone:
 <tr>
     <td>Seg-L-Mask/16</td>
     <td>79.1 / 81.3</td>
-    <td>334M</td>
+    <td>322M</td>
     <td>768x768</td>
     <td>-</td>
     <td><a href="https://www.rocq.inria.fr/cluster-willow/rstrudel/segmenter/checkpoints/cityscapes/seg_large_mask/checkpoint.pth">model</a></td>
