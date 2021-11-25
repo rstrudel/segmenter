@@ -120,7 +120,7 @@ class VisionTransformer(nn.Module):
         pos_embed = self.pos_embed
         num_extra_tokens = 1 + self.distilled
         if x.shape[1] != pos_embed.shape[1]:
-            pos_embed = utils.resize_pos_embed(
+            pos_embed = resize_pos_embed(
                 pos_embed,
                 self.patch_embed.grid_size,
                 (H // PS, W // PS),
