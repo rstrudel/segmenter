@@ -48,8 +48,7 @@ def save_im(save_dir, save_name, im, seg_pred, seg_gt, colors, blend, normalizat
         else:
             ims = (im_uint[i], seg_pred_uint[i], seg_rgb_uint[i])
         for im, im_dir in zip(
-            ims,
-            (save_dir / "input", save_dir / "pred", save_dir / "gt"),
+            ims, (save_dir / "input", save_dir / "pred", save_dir / "gt"),
         ):
             pil_out = Image.fromarray(im)
             im_dir.mkdir(exist_ok=True)
@@ -57,11 +56,7 @@ def save_im(save_dir, save_name, im, seg_pred, seg_gt, colors, blend, normalizat
 
 
 def process_batch(
-    model,
-    batch,
-    window_size,
-    window_stride,
-    window_batch_size,
+    model, batch, window_size, window_stride, window_batch_size,
 ):
     ims = batch["im"]
     ims_metas = batch["im_metas"]
@@ -118,11 +113,7 @@ def eval_dataset(
     for batch in logger.log_every(db, print_freq, header):
         colors = batch["colors"]
         filename, im, seg_pred = process_batch(
-            model,
-            batch,
-            window_size,
-            window_stride,
-            window_batch_size,
+            model, batch, window_size, window_stride, window_batch_size,
         )
         ims[filename] = im
         seg_pred_maps[filename] = seg_pred
@@ -236,13 +227,9 @@ def main(
     if im_size is None:
         im_size = dataset_cfg.get("im_size", variant["dataset_kwargs"]["image_size"])
     if window_size is None:
-        window_size = dataset_cfg.get(
-            "window_size", variant["dataset_kwargs"]["crop_size"]
-        )
+        window_size = variant["dataset_kwargs"]["crop_size"]
     if window_stride is None:
-        window_stride = dataset_cfg.get(
-            "window_stride", variant["dataset_kwargs"]["crop_size"]
-        )
+        window_stride = variant["dataset_kwargs"]["crop_size"] - 32
 
     dataset_kwargs = dict(
         dataset=dataset_name,
