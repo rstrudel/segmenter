@@ -7,7 +7,7 @@ by Robin Strudel*, Ricardo Garcia*, Ivan Laptev and Cordelia Schmid, ICCV 2021.
 
 *Equal Contribution
 
-🔥 **Segmenter is available on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation/tree/master/configs/segmenter)**
+🔥 **Segmenter is now available on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation/tree/master/configs/segmenter).**
 
 ## Installation
 
